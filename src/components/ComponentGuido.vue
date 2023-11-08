@@ -3,7 +3,7 @@
 </script>
 
 <template>
-
+  <marquee>Guido</marquee>
 </template>
 
 <style scoped>
