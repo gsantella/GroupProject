@@ -7,6 +7,7 @@ function guidoButton(){
 
 <template>
   <button id ="add_message" @click="guidoButton()">Add Message</button>
+  
 </template>
 
 <style scoped>
