@@ -1,6 +1,12 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import ComponentGuido from './components/ComponentGuido.vue'
+  import ComponentZachW from './components/ComponentZachW.vue'
+  import ComponentNathan from './components/ComponenetNathan.vue'
+  import ComponentSkyler from './components/ComponentSkyler.vue'
+  import ComponentTravis from './components/ComponentTravis.vue'
+
+
 </script>
 
 <template>
@@ -14,6 +20,11 @@ import ComponentGuido from './components/ComponentGuido.vue'
 
   <main>
     <ComponentGuido />
+    
+    <ComponentTravis />
+    <ComponentSkyler />
+    <ComponentNathan />
+    <ComponentGordon />
   </main>
 </template>
 
