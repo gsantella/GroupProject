@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h2>Logan</h2>
+  <h2>Logan G</h2>
 </template>
 
 <style scoped>
