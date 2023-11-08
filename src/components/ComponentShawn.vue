@@ -11,6 +11,16 @@ function guidoButton(){
 </template>
 
 <style scoped>
+button{
+  background-color: pink;
+  text-align: centert;
+  width: 700px;
+  height: 500 px;
+  font-size: 90pt;
+  border-width: 17px;
+  
+
+}
 
   
 </style>
