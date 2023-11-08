@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h1>CODING</h1>
+  <h1>Travi's Thoughts on Coding-Travis</h1>
   <marquee>I HATE CODING!!</marquee>
 
 </template>
