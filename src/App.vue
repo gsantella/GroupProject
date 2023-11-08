@@ -20,7 +20,8 @@ import ComponentGuido from './components/ComponentGuido.vue'
 
   <main>
     <ComponentGuido />
-    
+    <ComponentZachW />
+    <ComponentDamian />
     <ComponentTravis />
     <ComponentSkyler />
     <ComponentNathan />
