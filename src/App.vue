@@ -11,25 +11,29 @@ import ComponentTravis from './components/ComponentTravis.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
+  
   <main>
-    <ComponentDevin />
-    <ComponentLoganG />
-    <ComponentShawn />
-    <ComponentGuido />
-    <ComponentZachW />
-    <ComponentDamian />
-    <ComponentTravis />
-    <ComponentSkyler />
-    <ComponentGordon />
+
+    <div class="columns">
+      <div class="column" style="border:1px solid red">
+        <ComponentDevin />
+        <ComponentLoganG />
+        <ComponentShawn />
+      </div>
+      <div class="column" style="border:1px solid red">
+        <ComponentGuido />
+        <ComponentZachW />
+        <ComponentDamian />
+      </div>
+      <div class="column" style="border:1px solid red">
+        <ComponentTravis />
+        <ComponentSkyler />
+        <ComponentGordon />
+      </div>
+    </div>    
+    
   </main>
+  
 </template>
 
 <style scoped>
