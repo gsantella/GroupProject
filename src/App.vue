@@ -24,7 +24,7 @@ import ComponentGuido from './components/ComponentGuido.vue'
     <ComponentDamian />
     <ComponentTravis />
     <ComponentSkyler />
-    <ComponentNathan />
+    
     <ComponentGordon />
   </main>
 </template>
