@@ -16,21 +16,61 @@ import ComponentTravis from './components/ComponentTravis.vue'
 
     <div class="columns">
       <div class="column" style="border:1px solid red">
-        <ComponentDevin />
-        <ComponentLoganG />
-        <ComponentShawn />
+        <div class="card">
+          <div class="card-content">  
+            <ComponentDevin />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">  
+            <ComponentLoganG />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">  
+            <ComponentShawn />
+          </div>
+        </div>
       </div>
       <div class="column" style="border:1px solid red">
-        <ComponentGuido />
-        <ComponentZachW />
-        <ComponentDamian />
+        <div class="card">
+          <div class="card-content"> 
+            <ComponentGuido />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content"> 
+            <ComponentZachW />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content"> 
+            <ComponentDamian />
+          </div>
+        </div>  
       </div>
       <div class="column" style="border:1px solid red">
-        <ComponentTravis />
-        <ComponentSkyler />
-        <ComponentGordon />
+        <div class="card">
+          <div class="card-content"> 
+            <ComponentTravis />
+          </div>
+        </div>
+          
+        <div class="card">
+          <div class="card-content"> 
+            <ComponentSkyler />
+          </div>
+        </div>
+            
+        <div class="card">
+          <div class="card-content"> 
+            <ComponentGordon />
+          </div>
+        </div>  
+
       </div>
-    </div>    
+    </div>   
+      
     
   </main>
   

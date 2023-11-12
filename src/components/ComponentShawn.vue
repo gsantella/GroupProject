@@ -13,13 +13,8 @@ function guidoButton(){
 <style scoped>
 button{
   background-color: pink;
-  text-align: centert;
-  width: 700px;
-  height: 500 px;
-  font-size: 90pt;
+  text-align: center;
   border-width: 17px;
-  
-
 }
 
   
