@@ -1,12 +1,13 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import ComponentGuido from './components/ComponentGuido.vue'
+  import ComponentShawn from './components/ComponentShawn.vue'
+  import ComponentGuido from './components/ComponentGuido.vue'
 import ComponentZachW from './components/ComponentZachW.vue'
 import ComponenetNathan from './components/ComponenetNathan.vue'
 import ComponentSkyler from './components/ComponentSkyler.vue'
 import ComponentTravis from './components/ComponentTravis.vue'
-
-
+  import ComponentLoganG from './components/ComponentLoganG.vue'
+  import ComponentDevin from './components/ComponentDevin.vue'
 </script>
 
 <template>
@@ -19,6 +20,9 @@ import ComponentTravis from './components/ComponentTravis.vue'
   </header>
 
   <main>
+    <ComponentDevin />
+    <ComponentLoganG />
+    <ComponentShawn />
     <ComponentGuido />
     <ComponentZachW />
     <ComponentDamian />
