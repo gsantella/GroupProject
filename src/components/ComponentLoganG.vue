@@ -1,9 +1,13 @@
 <script setup>
+  function openGoogleInNewTab() {
+    var googleUrl = 'https://www.google.com';
 
+    window.open(googleUrl, '_blank');
+  }
 </script>
 
 <template>
-  <h2>Logan G</h2>
+  <button onclick="openGoogleInNewTab()" class="button is-info is-rounded" >Logan</button>
 </template>
 
 <style scoped>
