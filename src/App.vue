@@ -88,6 +88,12 @@ import ComponentTravis from './components/ComponentTravis.vue'
           </div>
         </div>  
 
+        <div class="card">
+          <div class="card-content"> 
+            <ComponenetNathan />
+          </div>
+        </div>  
+
       </div>
     </div>   
       
