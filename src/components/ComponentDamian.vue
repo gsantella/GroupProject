@@ -1,5 +1,5 @@
 <script setup>
-  
+  alert('Awesome');
 </script>
 
 <template>
