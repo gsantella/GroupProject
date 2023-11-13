@@ -1,8 +1,10 @@
 <script setup>
-  var canvas = document.getElementById("canvas")
-  var context = canvas.getContext('2d')
+  import { ref, onMounted } from 'vue';
 
-  var colors = [
+  const canvas = ref(null);
+  let context = null;
+
+  const colors = [
     "red",
     "blue",
     "green",
@@ -13,11 +15,11 @@
     "pink"
   ];
 
-  var boxes = []
+  const balls = ref([]);
 
-  var settings = {
-    boxSize: 25,
-    boxAmount: 20, 
+  const settings = {
+    ballSize: 25,
+    ballAmount: 20, 
     maxDuration: 50
   }
 
@@ -29,42 +31,41 @@
     return randomNumber(2,0)
   }
 
-  function updateBoxes(){
-    for (i=0;i<boxes.length;i++){
-      if (boxes[i].duration == 0){
-        boxes[i] = addBox()
-        boxes[i].duration = settings.maxDuration
+  function updateBalls(){
+    for (let i=0;i<balls.value.length;i++){
+      if (balls.value[i].duration == 0){
+        balls.value[i] = addBall();
+        balls.value[i].duration = settings.maxDuration;
       }
-      boxes[i].duration -= 1
-      if (boxes[i].dir == 0){
-        boxes[i].x -= boxes[i].speed
+      balls.value[i].duration -= 1;
+      if (balls.value[i].dir == 0){
+        balls.value[i].x -= balls.value[i].speed;
       } else {
-        boxes[i].x += boxes[i].speed
+        balls.value[i].x += balls.value[i].speed;
       }
     }
   }
 
-  function createBoxes(){
-    for (i = 0; i < settings.boxAmount; i++){
-      boxes.push(addBox())
+  function createBalls(){
+    for (let i = 0; i < settings.ballAmount; i++){
+      balls.value.push(addBall());
     }
   }
 
-  function drawBoxes(){
-    for (i = 0; i < boxes.length; i ++){
-
+  function drawBalls(){
+    for (let i = 0; i < balls.value.length; i ++){
       context.beginPath();
-      context.arc(boxes[i].x,boxes[i].y,boxes[i].size,0,2*Math.PI)
-      context.fillStyle = boxes[i].color
-      context.fill()
+      context.arc(balls.value[i].x,balls.value[i].y,balls.value[i].size,0,2*Math.PI);
+      context.fillStyle = balls.value[i].color;
+      context.fill();
     }
   }
 
-  function addBox(){
+  function addBall(){
     return {
-      x: randomNumber(canvas.width - (settings.boxSize + 5), 1) + (settings.boxSize + 5),
-      y: randomNumber(canvas.height - (settings.boxSize + 5), 1) + (settings.boxSize + 5),
-      size: randomNumber(settings.boxSize, 5),
+      x: randomNumber(canvas.value.width - (settings.ballSize + 5), 1) + (settings.ballSize + 5),
+      y: randomNumber(canvas.value.height - (settings.ballSize + 5), 1) + (settings.ballSize + 5),
+      size: randomNumber(settings.ballSize, 5),
       color: colors[randomNumber(colors.length, 0)],
       duration: randomNumber(settings.maxDuration, 5),
       dir: leftOrRight(),
@@ -72,20 +73,22 @@
     }
   }
 
-  createBoxes()
-
-  function runCode(){
-    context.clearRect(0,0,canvas.width,canvas.height)
-    drawBoxes()
-    updateBoxes()
-    requestAnimationFrame(runCode)
-  }
-
-  runCode()
+  onMounted(() => {
+    canvas.value = document.getElementById('canvas');
+    context = canvas.value.getContext('2d');
+    createBalls();
+    function runCode(){
+      context.clearRect(0,0,canvas.value.width,canvas.value.height);
+      drawBalls();
+      updateBalls();
+      requestAnimationFrame(runCode);
+    }
+    runCode();
+  });
 </script>
 
 <template>
-
+  <canvas ref="canvas" id="canvas" height="400" width="600"></canvas>
 </template>
 
 <style scoped>
