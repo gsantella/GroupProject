@@ -3,7 +3,10 @@
 </script>
 
 <template>
-<h1>Skyler Steele</h1>
+  <body>
+
+<h1 style="color:blue;">Skyler Steele</h1>
+  </body>
 </template>
 
 <style scoped>
