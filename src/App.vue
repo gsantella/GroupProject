@@ -9,6 +9,8 @@ import ComponentTravis from './components/ComponentTravis.vue'
   import ComponentLoganG from './components/ComponentLoganG.vue'
   import ComponentDevin from './components/ComponentDevin.vue'
   import ComponentGordon from './components/ComponentGordon.vue'
+  //import ComponentDan from './components/ComponentDan.vue'
+  import ComponentDamian from './components/ComponentDamian.vue'
 </script>
 
 <template>
@@ -56,6 +58,11 @@ import ComponentTravis from './components/ComponentTravis.vue'
         </div>  
       </div>
       <div class="column" style="border:1px solid red">
+        <div class="card">
+          <div class="card-content">  
+            <ComponentGordon />
+          </div>
+        </div>
         <div class="card">
           <div class="card-content"> 
             <ComponentTravis />
