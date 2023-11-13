@@ -8,6 +8,7 @@ import ComponentSkyler from './components/ComponentSkyler.vue'
 import ComponentTravis from './components/ComponentTravis.vue'
   import ComponentLoganG from './components/ComponentLoganG.vue'
   import ComponentDevin from './components/ComponentDevin.vue'
+  import ComponentGordon from './components/ComponentGordon.vue'
 </script>
 
 <template>
@@ -16,6 +17,11 @@ import ComponentTravis from './components/ComponentTravis.vue'
 
     <div class="columns">
       <div class="column" style="border:1px solid red">
+        <div class="card">
+          <div class="card-content">  
+            <ComponentGordon />
+          </div>
+        </div>
         <div class="card">
           <div class="card-content">  
             <ComponentDevin />
