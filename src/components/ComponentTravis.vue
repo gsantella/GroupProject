@@ -1,4 +1,5 @@
 <script setup>
+  
   function appendToDisplay(value) {
       document.getElementById('display').value += value;
   }
@@ -16,16 +17,9 @@
   }
 
 </script>
+ 
 
 <template>
-
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Simple Calculator</title>
-      
-  </head>
-  <body>
 
   <div id="calculator">
       <input type="text" id="display" readonly>
@@ -51,9 +45,7 @@
       <input type="button" value="C" onclick="clearDisplay()">
   </div>
 
- 
 
-  </body>
  
 </template>
 
@@ -67,14 +59,14 @@
       box-sizing: border-box;
   }
   input[type="button"] {
-      width: 48px;
-      height: 48px;
+      width: 40px;
+      height: 40px;
       font-size: 18px;
       margin: 5px;
   }
   #calculator {
-      width: 250px;
-      margin: 50px auto;
+      width: 350px;
+      margin: 10px auto;
       border: 1px solid #ccc;
       padding: 10px;
       border-radius: 5px;
