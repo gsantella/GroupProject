@@ -1,15 +1,14 @@
 <script setup>
-  function openGoogleInNewTab() {
-    var googleUrl = 'https://www.google.com';
-
-    window.open(googleUrl, '_blank');
-  }
+  
 </script>
 
 <template>
-  <button onclick="openGoogleInNewTab()" class="button is-info is-rounded" >Logan</button>
+  <button onclick="alert('Why did you click me.')" class="button is-info is-rounded" >Logan</button>
+  <progress class="progress is-medium is-dark" max="100">45%</progress>
 </template>
 
 <style scoped>
-
+h1 {
+  color: #green;
+}
 </style>
