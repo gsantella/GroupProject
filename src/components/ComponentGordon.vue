@@ -7,9 +7,6 @@
 </template>
 
 <style scoped>
-  h1 {
-    color: mediumpurple;
-  }
 </style>
 
 
