@@ -1,5 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+  import ComponentZachS from './components/ComponentZachS.vue'
   import ComponentShawn from './components/ComponentShawn.vue'
   import ComponentGuido from './components/ComponentGuido.vue'
 import ComponentZachW from './components/ComponentZachW.vue'
@@ -20,6 +21,11 @@ import ComponentTravis from './components/ComponentTravis.vue'
 
     <div class="columns">
       <div class="column" style="border:1px solid red">
+        <div class="card">
+          <div class="card-content">  
+            <ComponentZachS />
+          </div>
+        </div>
         <div class="card">
           <div class="card-content">  
             <ComponentGordon />
