@@ -5,7 +5,6 @@
 </script>
 
 <template>
-  <div class="devin">
   <h1>Devin</h1>  
 </template>
 
