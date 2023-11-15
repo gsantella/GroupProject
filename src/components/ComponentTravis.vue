@@ -6,7 +6,7 @@
 
 <script setup>
 const rickroll = () => {
-  // Redirect to the Rick Astley's "Never Gonna Give You Up" video on YouTube
+ 
   window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
 };
 </script>
