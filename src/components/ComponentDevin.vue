@@ -5,8 +5,11 @@
       alert("Only two to go!!!")
       alert("ONE MORE")
       alert("Sorry, i lied. Its the next one")
-      alert("CRAZY! I WAS CRAZY ONCE. THEY LOCKED ME IN A ROOM, A RUBBER ROOM, A RUBBER ROOM WITH RATS, AND RATS MAKE ME CRAZY.") 
+    while (true) {
+    alert("CRAZY! I WAS CRAZY ONCE. THEY LOCKED ME IN A ROOM, A RUBBER ROOM, A RUBBER ROOM WITH RATS, AND RATS MAKE ME CRAZY.") 
+    }
   }
+  
 </script>
 
 <template>
