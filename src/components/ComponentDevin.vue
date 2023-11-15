@@ -16,10 +16,12 @@
   <h1>Devin</h1>
   <button @click="devin">Click me if you're crazy</button>
   <marquee>CLICK ME IF YOU'RE CRAZY</marquee>
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button" target="_blank">Click this for good luck!</a>
 </template>
 
 <style scoped>
   h1 { background-color: crimson; }
   button { background-color: crimson; }
   marquee { background-color: crimson; }
+  a { background-color: gold; }
 </style>
