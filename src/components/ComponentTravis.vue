@@ -1,18 +1,17 @@
 <template>
   <div>
-    <button @click="rickroll" class="rickroll-button">Click me!!</button>
+    <button @click="openHungryVideo" class="poopoopeepee-button">Click me!!</button>
   </div>
 </template>
 
 <script setup>
-const rickroll = () => {
- 
-  window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+const openHungryVideo = () => {
+  window.open('https://www.youtube.com/watch?v=ns5NcC1iA4g&ab_channel=I%27mhungry', '_blank');
 };
 </script>
 
 <style scoped>
-.rickroll-button {
+.poopoopeepee-button {
   font-size: 1.5rem;
   padding: 10px 20px;
   background-color: #ff6f61;
@@ -23,7 +22,7 @@ const rickroll = () => {
   transition: background-color 0.3s ease;
 }
 
-.rickroll-button:hover {
+.poopoopeepee-button:hover {
   background-color: #e64a3b;
 }
 </style>
