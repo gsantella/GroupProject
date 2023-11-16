@@ -1,13 +1,16 @@
 <script setup>
-import 
+  function Smell() {
+    window.location.href = 'https://youtu.be/1yXrppa7MrM?si=tRunRgX-1BmJYkFP';
+  }
 </script>
 
 <template>
-  <h1><a href="https://youtu.be/1yXrppa7MrM">Smelvin</a></h1>
   
+  <button onclick="Smell()">Smell Check</button>
+ <h2><marquee> Cole </marquee></h2>
 </template>
 
 <style scoped>
-h1 {color: cyan;}
+button {color: cyan;}
   
 </style>
