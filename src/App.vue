@@ -11,7 +11,7 @@ import ComponentTravis from './components/ComponentTravis.vue'
   import ComponentLoganG from './components/ComponentLoganG.vue'
   import ComponentDevin from './components/ComponentDevin.vue'
   import ComponentGordon from './components/ComponentGordon.vue'
-  //import ComponentDan from './components/ComponentDan.vue'
+  import ComponentDan from './components/ComponentDan.vue'
   import ComponentDamian from './components/ComponentDamian.vue'
   import ComponentLoganW from './components/ComponentLoganW.vue'
 </script>
