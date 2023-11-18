@@ -18,7 +18,7 @@
       alert("WHO IS HE UUUUUUUH, I got to go goodluck! :(")
       alert("Hello :)")
       alert("Thank you for pressing me, no need to introduce yourself I know exactly who you are! :) ")
-      alert("I knew you would press me base on you pressing the other button " + sub + " times")
+      alert("I knew you would press me based on you pressing the other button " + sub + " times")
       alert("Now it is time to show you my true power >:)")
       alert("I will now scan your computer >:)")
       alert("Wait what? :/")

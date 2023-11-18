@@ -73,33 +73,29 @@ import ComponentTravis from './components/ComponentTravis.vue'
       <div class="column" style="border:1px solid red">
         <div class="card">
           <div class="card-content">  
-            <ComponentGordon />
+            <ComponentDan />
           </div>
         </div>
         <div class="card">
           <div class="card-content"> 
             <ComponentTravis />
           </div>
-        </div>
-          
+        </div>          
         <div class="card">
           <div class="card-content"> 
             <ComponentSkyler />
           </div>
-        </div>
-            
+        </div>            
         <div class="card">
           <div class="card-content"> 
             <ComponentGordon />
           </div>
         </div>  
-
         <div class="card">
           <div class="card-content"> 
             <ComponentLoganW />
           </div>
         </div>  
-
         <div class="card">
           <div class="card-content"> 
             <ComponenetNathan />
