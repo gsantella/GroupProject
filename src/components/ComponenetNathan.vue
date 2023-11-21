@@ -3,7 +3,7 @@
 
   const canvas = ref(null);
   let context = null;
-
+  
   const colors = [
     "red",
     "blue",
@@ -15,43 +15,54 @@
     "pink"
   ];
 
+  //balls list
   const balls = ref([]);
 
+  //ball object settings, change to user input
   const settings = {
-    ballSize: 25,
-    ballAmount: 20, 
-    maxDuration: 50
+    ballSize: 40,
+    ballAmount: 100, 
+    maxDuration: 100
   }
 
+  //global random number
   function randomNumber(n, s){
     return Math.floor(Math.random()*n)+s
   }
 
-  function leftOrRight(){
-    return randomNumber(2,0)
-  }
+  //update direction of balls
+ function updateDirection() {
+  for (let i = 0; i < balls.value.length; i++) {
+    if ((balls.value[i].y + balls.value[i].dirY * balls.value[i].speed > canvas.value.height - balls.value[i].size) || (balls.value[i].y + balls.value[i].dirY * balls.value[i].speed < 0 + balls.value[i].size)) {
+      balls.value[i].dirY = -balls.value[i].dirY;
+    }
+    if ((balls.value[i].x + balls.value[i].dirX * balls.value[i].speed > canvas.value.width - balls.value[i].size) || (balls.value[i].x + balls.value[i].dirX * balls.value[i].speed < 0 + balls.value[i].size)) {
+      balls.value[i].dirX = -balls.value[i].dirX;
+    }
 
-  function updateBalls(){
-    for (let i=0;i<balls.value.length;i++){
-      if (balls.value[i].duration == 0){
-        balls.value[i] = addBall();
-        balls.value[i].duration = settings.maxDuration;
-      }
-      balls.value[i].duration -= 1;
-      if (balls.value[i].dir == 0){
-        balls.value[i].x -= balls.value[i].speed;
-      } else {
-        balls.value[i].x += balls.value[i].speed;
-      }
+    balls.value[i].y += balls.value[i].dirY * balls.value[i].speed;
+    balls.value[i].x += balls.value[i].dirX * balls.value[i].speed;
+
+    /*if (balls.value[i].dirY == 0){
+      balls.value[i].y += balls.value[i].speed;
+    } else {
+      balls.value[i].y += balls.value[i].speed;
+    }
+    if (balls.value[i].dirx == 0){
+      balls.value[i].x += balls.value[i].speed;
+    } else {
+      balls.value[i].x += balls.value[i].speed;
+    }*/
     }
   }
-
+  
+  //base canvas of balls, checks ballsOnScreen == ballsAmount
   function createBalls(){
     for (let i = 0; i < settings.ballAmount; i++){
       balls.value.push(addBall());
     }
   }
-
+  //draws all objects of balls[]  on canvas
   function drawBalls(){
     for (let i = 0; i < balls.value.length; i ++){
       context.beginPath();
@@ -60,29 +71,35 @@
       context.fill();
     }
   }
-
+  
+  //returns values for ball object with specified values
   function addBall(){
     return {
-      x: randomNumber(canvas.value.width - (settings.ballSize + 5), 1) + (settings.ballSize + 5),
-      y: randomNumber(canvas.value.height - (settings.ballSize + 5), 1) + (settings.ballSize + 5),
+      x: randomNumber(canvas.value.width - settings.ballSize, 0),
+      y: randomNumber(canvas.value.height, 0),
       size: randomNumber(settings.ballSize, 5),
       color: colors[randomNumber(colors.length, 0)],
-      duration: randomNumber(settings.maxDuration, 5),
-      dir: leftOrRight(),
+      dirX: randomNumber(2,1),
+      dirY: randomNumber(2,1),
       speed: randomNumber(5,1)
     }
   }
-
+  
   onMounted(() => {
+    //sets value to 'canvas', get rendering element
     canvas.value = document.getElementById('canvas');
     context = canvas.value.getContext('2d');
+    //generates balls
     createBalls();
+    //clear canvas, draw balls, update, request frame, loop
     function runCode(){
       context.clearRect(0,0,canvas.value.width,canvas.value.height);
       drawBalls();
-      updateBalls();
+      updateDirection();
+      //updatePosition();
       requestAnimationFrame(runCode);
     }
+    //start loop
     runCode();
   });
 </script>
