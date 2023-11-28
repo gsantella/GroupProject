@@ -14,6 +14,9 @@ import ComponentTravis from './components/ComponentTravis.vue'
   import ComponentDan from './components/ComponentDan.vue'
   import ComponentDamian from './components/ComponentDamian.vue'
   import ComponentLoganW from './components/ComponentLoganW.vue'
+  import ComponentAdam from './components/ComponentAdam.vue'
+  import ComponentBen from './components/ComponentBen.vue'
+  import ComponentOwenH from './components/ComponentOwenH.vue'
 </script>
 
 <template>
@@ -22,6 +25,21 @@ import ComponentTravis from './components/ComponentTravis.vue'
 
     <div class="columns">
       <div class="column" style="border:1px solid red">
+        <div class="card">
+          <div class="card-content">  
+            <ComponentBen />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">  
+            <ComponentAdam />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">  
+            <ComponentOwenH />
+          </div>
+        </div>
         <div class="card">
           <div class="card-content">  
             <ComponentAsh />
