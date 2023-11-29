@@ -17,6 +17,7 @@ import ComponentTravis from './components/ComponentTravis.vue'
   import ComponentAdam from './components/ComponentAdam.vue'
   import ComponentBen from './components/ComponentBen.vue'
   import ComponentOwenH from './components/ComponentOwenH.vue'
+  import ComponentMarcus from './components/ComponentMarcus.vue'
 </script>
 
 <template>
@@ -38,6 +39,11 @@ import ComponentTravis from './components/ComponentTravis.vue'
         <div class="card">
           <div class="card-content">  
             <ComponentOwenH />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">  
+            <ComponentMarcus />
           </div>
         </div>
         <div class="card">
