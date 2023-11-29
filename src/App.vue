@@ -28,6 +28,11 @@ import ComponentTravis from './components/ComponentTravis.vue'
       <div class="column" style="border:1px solid red">
         <div class="card">
           <div class="card-content">  
+            <ComponentGuido />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">  
             <ComponentBen />
           </div>
         </div>
