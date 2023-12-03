@@ -17,6 +17,7 @@ import ComponentTravis from './components/ComponentTravis.vue'
   import ComponentBen from './components/ComponentBen.vue'
   import ComponentOwenH from './components/ComponentOwenH.vue'
   import ComponentMarcus from './components/ComponentMarcus.vue'
+  import ComponentGuido2 from './components/ComponentGuido2.vue'
 </script>
 
 <template>
@@ -25,6 +26,11 @@ import ComponentTravis from './components/ComponentTravis.vue'
 
     <div class="columns">
       <div class="column" style="border:1px solid red">
+        <div class="card">
+          <div class="card-content">  
+            <ComponentGuido2 msg="some input for you??" />
+          </div>
+        </div>
         <div class="card">
           <div class="card-content">  
             <ComponentGuido />
