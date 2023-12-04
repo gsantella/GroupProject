@@ -28,7 +28,7 @@ import ComponentTravis from './components/ComponentTravis.vue'
       <div class="column" style="border:1px solid red">
         <div class="card">
           <div class="card-content">  
-            <ComponentGuido2 msg="some input for you??" />
+            <ComponentGuido2 msg="happy monday..." />
           </div>
         </div>
         <div class="card">
@@ -53,7 +53,7 @@ import ComponentTravis from './components/ComponentTravis.vue'
         </div>
         <div class="card">
           <div class="card-content">  
-            <ComponentMarcus />
+            <ComponentMarcus @big-error="console.log('error from Marcus component!')" />
           </div>
         </div>
         <div class="card">
