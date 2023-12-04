@@ -5,7 +5,7 @@
 
 <template>
     <marquee>Marcus</marquee>
-    <h1>Count = {{ count * 10 }}</h1>
+    <h1>Count * 10 = {{ count * 10 }}</h1>
     <p>This is a paragraph.</p>
     <button @click="count++">Count is: {{ count }}</button>
 </template>
