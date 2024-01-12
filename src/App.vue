@@ -19,14 +19,20 @@ import ComponentTravis from './components/ComponentTravis.vue'
   import ComponentMarcus from './components/ComponentMarcus.vue'
   import ComponentGuido2 from './components/ComponentGuido2.vue'
   import StarWarsMarcus from './components/StarWarsMarcus.vue'
+  import StarWarsOwen from './components/StarWarsOwen.vue'
 </script>
 
 <template>
   
   <main>
-
+  
     <div class="columns">
       <div class="column" style="border:1px solid red">
+        <div class="card">
+          <div class="card-content">  
+             <StarWarsOwen id="3" />
+          </div>
+          </div>
         <div class="card">
           <div class="card-content">  
              <StarWarsMarcus id="1" />
